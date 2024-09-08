@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "41417a2d-b4ef-49ac-8871-a86fa44fa7a3",
+		"name": "Reporting APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21969120"
+	},
+	"item": [
+		{
+			"name": "Fetch between two dates",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "qwerty123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/leads/fetch-between-dates/?start_date=2024-09-05&end_date=2024-09-06",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"leads",
+						"fetch-between-dates",
+						""
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2024-09-05"
+						},
+						{
+							"key": "end_date",
+							"value": "2024-09-06"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bottom 10 products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/bottom10/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"bottom10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 10 products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/top10/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"top10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number of Products Inquired by Each Lead",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/leads/products-count/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"leads",
+						"products-count",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
